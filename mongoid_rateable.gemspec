@@ -19,30 +19,8 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "TODO"
   ]
-  s.files = [
-    ".rspec",
-    ".rvmrc",
-    ".travis.yml",
-    "CHANGELOG.md",
-    "Gemfile",
-    "Gemfile.lock",
-    "LICENSE.txt",
-    "README.rdoc",
-    "Rakefile",
-    "TODO",
-    "VERSION",
-    "lib/mongoid_rateable.rb",
-    "lib/mongoid_rateable/rateable.rb",
-    "lib/mongoid_rateable/rating.rb",
-    "lib/mongoid_rateable/version.rb",
-    "mongoid_rateable.gemspec",
-    "spec/models/article.rb",
-    "spec/models/comment.rb",
-    "spec/models/post.rb",
-    "spec/models/user.rb",
-    "spec/rateable_spec.rb",
-    "spec/spec_helper.rb"
-  ]
+
+  s.files = `git ls-files`.split($\)
   s.homepage = "http://github.com/proton/mongoid_rateable"
   s.licenses = ["MIT"]
   s.rubygems_version = "2.2.2"
@@ -77,5 +55,6 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<rspec>, ["~> 2.0"])
     s.add_dependency(%q<database_cleaner>, ["~> 0"])
   end
+  s.add_runtime_dependency('mongoid', "~> 4.0")
 end
 
