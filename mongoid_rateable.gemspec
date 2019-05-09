@@ -54,7 +54,5 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<rspec>, ["~> 2.0"])
     s.add_dependency(%q<database_cleaner>, ["~> 0"])
   end
-  #s.add_runtime_dependency('mongoid', "~> 5.0")
-  s.add_runtime_dependency 'mongoid', '~> 5.0', '~> 5.0'
 end
 
