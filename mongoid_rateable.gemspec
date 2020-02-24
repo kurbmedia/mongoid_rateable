@@ -46,7 +46,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<database_cleaner>, ["~> 0"])
     end
   else
-    s.add_dependency(%q<mongoid>, ["=> 5.0"])
+    s.add_dependency(%q<mongoid>, [">= 5.0"])
     s.add_dependency(%q<bundler>, ["~> 1"])
     s.add_dependency(%q<jeweler>, ["~> 1.6"])
     s.add_dependency(%q<simplecov>, ["~> 0.4"])
