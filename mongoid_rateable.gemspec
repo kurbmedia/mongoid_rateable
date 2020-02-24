@@ -25,12 +25,12 @@ Gem::Specification.new do |s|
   s.rubygems_version = "2.2.2"
   s.summary = "Rating functionality for Mongoid documents"
 
-  s.add_dependency(%q<mongoid>, [">= 5.0"])
-  s.add_dependency(%q<bundler>, ["~> 1"])
-  s.add_dependency(%q<jeweler>, ["~> 1.6"])
-  s.add_dependency(%q<simplecov>, ["~> 0.4"])
-  s.add_dependency(%q<rdoc>, ["~> 3"])
-  s.add_dependency(%q<rspec>, ["~> 2.0"])
-  s.add_dependency(%q<database_cleaner>, ["~> 0"])
+  s.add_runtime_dependency("mongoid", '~> 5.0')
+  s.add_dependency("bundler", "~> 1")
+  s.add_development_dependency("jeweler", "~> 1.6")
+  s.add_development_dependency("simplecov", "~> 0.4")
+  s.add_development_dependency("rdoc", "~> 3")
+  s.add_development_dependency("rspec", "~> 2.0")
+  s.add_development_dependency("database_cleaner", "~> 0")
 end
 
